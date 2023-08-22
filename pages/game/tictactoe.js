@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 const WINNING_LINES = [
@@ -119,15 +120,25 @@ export default function Game() {
   });
 
   return (
-    <div className="game">
-      <div className="game-board">
-        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
-      </div>
-      <div className="game-info">
-        <button onClick={handleToggleSort}>
-          Toggle Sort Order: {isAscending ? "Ascending" : "Descending"}
-        </button>
-        <ol>{moves}</ol>
+    <div>
+      <h2>
+        <Link href="/">Back to home</Link>
+      </h2>
+
+      <div className="game">
+        <div className="game-board">
+          <Board
+            xIsNext={xIsNext}
+            squares={currentSquares}
+            onPlay={handlePlay}
+          />
+        </div>
+        <div className="game-info">
+          <button onClick={handleToggleSort}>
+            Toggle Sort Order: {isAscending ? "Ascending" : "Descending"}
+          </button>
+          <ol>{moves}</ol>
+        </div>
       </div>
     </div>
   );
