@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import styles from "./tictactoe.module.css";
 
 const WINNING_LINES = [
   [0, 1, 2],
@@ -14,7 +15,7 @@ const WINNING_LINES = [
 
 function Square({ value, onSquareClick }) {
   return (
-    <button className="square" onClick={onSquareClick}>
+    <button className={styles.square} onClick={onSquareClick}>
       {value}
     </button>
   );
@@ -66,7 +67,7 @@ function Board({ xIsNext, squares, onPlay }) {
     }
 
     boardRows.push(
-      <div key={i} className="board-row">
+      <div key={i} className={styles.board_row}>
         {row}
       </div>
     );
@@ -74,7 +75,7 @@ function Board({ xIsNext, squares, onPlay }) {
 
   return (
     <>
-      <div className="status">{status}</div>
+      <div className={styles.status}>{status}</div>
       {boardRows}
     </>
   );
@@ -125,15 +126,15 @@ export default function Game() {
         <Link href="/">Back to home</Link>
       </h2>
 
-      <div className="game">
-        <div className="game-board">
+      <div className={styles.game}>
+        <div className={styles.game_board}>
           <Board
             xIsNext={xIsNext}
             squares={currentSquares}
             onPlay={handlePlay}
           />
         </div>
-        <div className="game-info">
+        <div className={styles.game_info}>
           <button onClick={handleToggleSort}>
             Toggle Sort Order: {isAscending ? "Ascending" : "Descending"}
           </button>
