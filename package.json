@@ -13,8 +13,7 @@
   },
   "homepage": "https://satutama.github.io/tic-tac-toe",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d .next",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
