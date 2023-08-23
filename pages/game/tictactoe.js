@@ -43,7 +43,7 @@ function Board({ xIsNext, squares, onPlay }) {
     status = "Winner: " + winner;
     winLine = calculateWinningLine(squares);
   } else if (squares.every((square) => square !== null)) {
-    status = "It's a draw!";
+    status = "It's a draw! Try again";
   } else {
     status = "Next player: " + (xIsNext ? "X" : "O");
   }
