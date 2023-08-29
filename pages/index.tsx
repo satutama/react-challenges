@@ -60,7 +60,6 @@ function Board({ xIsNext, squares, onPlay }: BoardProps) {
     const row = [];
     for (let j = 0; j < boardSize; j++) {
       const squareIndex = i * boardSize + j;
-      const isWinningSquare = winLine && winLine.includes(squareIndex);
 
       row.push(
         <Square
