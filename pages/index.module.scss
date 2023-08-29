@@ -2,8 +2,8 @@ $pink: rgb(255, 31, 244);
 $blue: rgb(23, 77, 255);
 
 .square {
-  background: $primary-background;
-  border: none;
+  background: transparent;
+  border: 1px solid;
   float: left;
 
   line-height: 34px;
