@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./index.module.css";
+import styles from "./index.module.scss";
 
 const WINNING_LINES = [
   [0, 1, 2],
