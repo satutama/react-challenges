@@ -1,13 +1,13 @@
-"use strict";
 (() => {
 var exports = {};
 exports.id = 820;
-exports.ids = [820,888,660];
+exports.ids = [820,660];
 exports.modules = {
 
-/***/ 51:
+/***/ 258:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   config: () => (/* binding */ config),
@@ -29,8 +29,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_dist_build_webpack_loaders_next_route_loader_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(182);
 /* harmony import */ var next_dist_pages_document__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(940);
 /* harmony import */ var next_dist_pages_document__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_dist_pages_document__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var next_dist_pages_app__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(35);
-/* harmony import */ var next_dist_pages_app__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_dist_pages_app__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var private_next_pages_app_tsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(178);
 /* harmony import */ var next_dist_pages_error__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(499);
 /* harmony import */ var next_dist_pages_error__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_dist_pages_error__WEBPACK_IMPORTED_MODULE_5__);
 // @ts-ignore this need to be imported from next/dist to be external
@@ -71,7 +70,7 @@ const routeModule = new PagesRouteModule({
         filename: ""
     },
     components: {
-        App: (next_dist_pages_app__WEBPACK_IMPORTED_MODULE_4___default()),
+        App: private_next_pages_app_tsx__WEBPACK_IMPORTED_MODULE_4__["default"],
         Document: (next_dist_pages_document__WEBPACK_IMPORTED_MODULE_3___default())
     },
     userland: next_dist_pages_error__WEBPACK_IMPORTED_MODULE_5__
@@ -81,9 +80,40 @@ const routeModule = new PagesRouteModule({
 
 /***/ }),
 
+/***/ 178:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(893);
+/* harmony import */ var _styles_global_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(291);
+/* harmony import */ var _styles_global_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_global_scss__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function MyApp({ Component, pageProps }) {
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
+        ...pageProps
+    });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyApp);
+
+
+/***/ }),
+
+/***/ 291:
+/***/ (() => {
+
+
+
+/***/ }),
+
 /***/ 76:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/server/future/route-modules/route-module.js");
 
 /***/ }),
@@ -91,6 +121,7 @@ module.exports = require("next/dist/server/future/route-modules/route-module.js"
 /***/ 140:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/server/get-page-files.js");
 
 /***/ }),
@@ -98,6 +129,7 @@ module.exports = require("next/dist/server/get-page-files.js");
 /***/ 716:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/server/htmlescape.js");
 
 /***/ }),
@@ -105,6 +137,7 @@ module.exports = require("next/dist/server/htmlescape.js");
 /***/ 100:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/server/render.js");
 
 /***/ }),
@@ -112,6 +145,7 @@ module.exports = require("next/dist/server/render.js");
 /***/ 368:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/server/utils.js");
 
 /***/ }),
@@ -119,6 +153,7 @@ module.exports = require("next/dist/server/utils.js");
 /***/ 918:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/amp-context.js");
 
 /***/ }),
@@ -126,6 +161,7 @@ module.exports = require("next/dist/shared/lib/amp-context.js");
 /***/ 732:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/amp-mode.js");
 
 /***/ }),
@@ -133,6 +169,7 @@ module.exports = require("next/dist/shared/lib/amp-mode.js");
 /***/ 724:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/constants.js");
 
 /***/ }),
@@ -140,6 +177,7 @@ module.exports = require("next/dist/shared/lib/constants.js");
 /***/ 796:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/head-manager-context.js");
 
 /***/ }),
@@ -147,6 +185,7 @@ module.exports = require("next/dist/shared/lib/head-manager-context.js");
 /***/ 743:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/html-context.js");
 
 /***/ }),
@@ -154,6 +193,7 @@ module.exports = require("next/dist/shared/lib/html-context.js");
 /***/ 524:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/is-plain-object.js");
 
 /***/ }),
@@ -161,20 +201,15 @@ module.exports = require("next/dist/shared/lib/is-plain-object.js");
 /***/ 470:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/side-effect.js");
-
-/***/ }),
-
-/***/ 232:
-/***/ ((module) => {
-
-module.exports = require("next/dist/shared/lib/utils.js");
 
 /***/ }),
 
 /***/ 618:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("next/dist/shared/lib/utils/warn-once.js");
 
 /***/ }),
@@ -182,6 +217,7 @@ module.exports = require("next/dist/shared/lib/utils/warn-once.js");
 /***/ 689:
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("react");
 
 /***/ })
@@ -193,7 +229,7 @@ module.exports = require("react");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [940,35,855,499], () => (__webpack_exec__(51)));
+var __webpack_exports__ = __webpack_require__.X(0, [940,815,499], () => (__webpack_exec__(258)));
 module.exports = __webpack_exports__;
 
 })();

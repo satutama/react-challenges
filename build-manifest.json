@@ -5,37 +5,30 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/mCy55DYP3-E46QDP5vL3p/_buildManifest.js",
-    "static/mCy55DYP3-E46QDP5vL3p/_ssgManifest.js"
+    "static/ghtBhJLiKtlcbV213NeMA/_buildManifest.js",
+    "static/ghtBhJLiKtlcbV213NeMA/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
     "/": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
       "static/chunks/framework-fd8489e836f30de2.js",
-      "static/chunks/main-2a03b3c445cf61a0.js",
-      "static/chunks/664-a12f814e6deb29a8.js",
-      "static/chunks/pages/index-6843fd6d65e6fc4c.js"
+      "static/chunks/main-8630e93f0c0a33eb.js",
+      "static/css/7dd063e135abff3d.css",
+      "static/chunks/pages/index-fb2d4f418b8a6133.js"
     ],
     "/_app": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
       "static/chunks/framework-fd8489e836f30de2.js",
-      "static/chunks/main-2a03b3c445cf61a0.js",
-      "static/chunks/pages/_app-aea6920bd27938ca.js"
+      "static/chunks/main-8630e93f0c0a33eb.js",
+      "static/css/493408347be06d32.css",
+      "static/chunks/pages/_app-fc0612bd43d3002e.js"
     ],
     "/_error": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
       "static/chunks/framework-fd8489e836f30de2.js",
-      "static/chunks/main-2a03b3c445cf61a0.js",
-      "static/chunks/pages/_error-3986dd5834f581dc.js"
-    ],
-    "/game/tictactoe": [
-      "static/chunks/webpack-8fa1640cc84ba8fe.js",
-      "static/chunks/framework-fd8489e836f30de2.js",
-      "static/chunks/main-2a03b3c445cf61a0.js",
-      "static/chunks/664-a12f814e6deb29a8.js",
-      "static/css/5e1e26afdb30f981.css",
-      "static/chunks/pages/game/tictactoe-6051bd021dddfb68.js"
+      "static/chunks/main-8630e93f0c0a33eb.js",
+      "static/chunks/pages/_error-54de1933a164a1ff.js"
     ]
   },
   "ampFirstPages": []
