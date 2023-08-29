@@ -18,8 +18,10 @@ interface SquareProps {
 }
 
 function Square({ value, onSquareClick }: SquareProps) {
+  const classNames = `${styles.square} ${value === 'X' ? styles.xColor : ''} ${value === 'O' ? styles.oColor : ''}`;
+
   return (
-    <button className={styles.square} onClick={onSquareClick}>
+    <button className={classNames} onClick={onSquareClick}>
       {value}
     </button>
   );
