@@ -1,48 +1,98 @@
 $pink: rgb(255, 31, 244);
 $blue: rgb(23, 77, 255);
 
+.board_row {
+  display: flex;
+}
+
 .square {
   background: transparent;
   border: 1px solid;
   float: left;
 
-  line-height: 34px;
-  height: 200px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 200px;
   font-family: cursive;
-  font-size: 130px;
   font-weight: bold;
   color: $secondary-background;
-}
-
-.xColor {
-  text-shadow: 0 0 7px $white,
-    0 0 10px $white, 0 0 21px $white,
-    0 0 42px $pink, 0 0 82px $pink,
-    0 0 92px $pink, 0 0 102px $pink,
-    0 0 151px $pink;
-}
-
-.oColor {
-  text-shadow: 0 0 7px $white,
-    0 0 10px $white, 0 0 21px $white,
-    0 0 42px $blue, 0 0 82px $blue,
-    0 0 92px $blue, 0 0 102px $blue,
-    0 0 151px $blue;
 }
 
 .status {
   margin-bottom: 10px;
 }
+
 .game {
   display: flex;
-  flex-direction: row;
 }
 
-.game_info {
-  margin-left: 20px;
+/* Mobile styles */
+@media (max-width: 1025px) {
+  /* Define your mobile-specific styles here */
+  .square {
+    line-height: 20px;
+    height: 64px;
+    width: 64px;
+    font-size: 40px;
+  }
+
+  .xColor {
+    text-shadow: 0 0 2px $white,
+      0 0 2px $white, 0 0 4px $white,
+      0 0 8px $pink, 0 0 16px $pink,
+      0 0 18px $pink, 0 0 20px $pink,
+      0 0 30px $pink;
+  }
+
+  .oColor {
+    text-shadow: 0 0 2px $white,
+      0 0 2px $white, 0 0 4px $white,
+      0 0 8px $blue, 0 0 16px $blue,
+      0 0 18px$blue, 0 0 20px $blue,
+      0 0 30px $blue;
+  }
+
+  .game {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game_info {
+    margin-top: 20px;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+  .game {
+    flex-direction: row;
+  }
+
+  .game_info {
+    margin-left: 20px;
+  }
+
+  .square {
+    line-height: 34px;
+    height: 200px;
+    width: 200px;
+    font-size: 130px;
+  }
+
+  .xColor {
+    text-shadow: 0 0 7px $white,
+      0 0 10px $white, 0 0 21px $white,
+      0 0 42px $pink, 0 0 82px $pink,
+      0 0 92px $pink, 0 0 102px $pink,
+      0 0 151px $pink;
+  }
+
+  .oColor {
+    text-shadow: 0 0 7px $white,
+      0 0 10px $white, 0 0 21px $white,
+      0 0 42px $blue, 0 0 82px $blue,
+      0 0 92px $blue, 0 0 102px $blue,
+      0 0 151px $blue;
+  }
 }
